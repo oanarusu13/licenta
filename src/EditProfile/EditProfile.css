@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#editProfilePage {
+  background-color: #B5C0D0;
+  width: 100vw;  
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 800px; 
+  height: 800px; 
+  margin: auto; 
+  background-color: #333;
+  border-radius: 10px; 
+  border: 1px solid #fdfdfd;
+  align-items: center;
+  padding: 40px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  gap: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="file"] {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #5cb415;
+  flex-grow: 1;
+  border-color: #060606;
+  width: 300px;
+}
+
+button {
+  padding: 20px; 
+  border-radius: 20px;
+  border: 0px;
+  background-color: #B5C0D0; 
+  color: #090808;
+  cursor: pointer;
+  margin-top: 0px; 
+  width: 100%;
+  align-self: center; 
+  width: 100px;
+  height: 100px;
+}
+button:hover {
+  background-color: #ffffff; /* Schimbă culoarea de fundal la alb */
+  color: #090808; /* Schimbă culoarea textului la negru */
+}
+#editProfilePage form h1 {
+  text-align: center; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  color: #8a75ba; 
+
+}
+.profile-icon {
+  margin-bottom: 20px; 
+  display: flex;
+  justify-content: center; 
+}
+#editProfilePage form h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #9ea3a9; 
+}

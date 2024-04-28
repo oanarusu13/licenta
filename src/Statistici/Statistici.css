@@ -1,0 +1,88 @@
+.statistici-container {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.judet-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.judet-title, .urgente-chart-title {
+  color: #333;
+}
+
+.operatori-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+
+.operatori-list li {
+  background-color: #e7ffe7; /* Verde deschis pentru operatori */
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.select-container {
+  text-align: center; 
+  display: flex;
+  justify-content: center; 
+  margin-top: 40px; 
+  margin-bottom: 20px
+}
+
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #e8f0e8; /* o nuanță de verde deschis */
+  color: green; /* textul verde */
+  margin-bottom: 20px
+}
+
+select:hover {
+  border-color: green; /* schimbă culoarea border-ului la hover */
+}
+
+
+.urgente-chart-container {
+  margin-top: 20px;
+  max-width: 600px; /* sau orice altă dimensiune */
+  margin: auto; /* pentru centrat */
+  padding: 20px; /* Spațiu în interiorul containerului */
+
+}
+
+
+button {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Verde mai închis la hover */
+}
+.pie-chart-container {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+}
+
+.alerte-preluate-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.grafice-statistici {
+  position: top;
+  top: 1000px; /* Ajustează această valoare pentru a controla cât de jos să fie plasat blocul cu grafice */
+}

@@ -1,0 +1,46 @@
+.alert-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif; 
+  color: #333;
+}
+
+  
+.alert-table-header {
+  background-color: #1e9400; 
+  color: white; 
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-shadow: 1px 1px 1px #000; 
+}
+
+  
+.alert-table-data {
+  padding: 8px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.alert-table-data:nth-child(even) {
+  background-color: #fff; 
+}
+.alert-table {
+  border-radius: 10px; 
+  overflow: hidden; 
+}
+
+.preluare {
+  background-color: rgb(64, 170, 50);
+  color: white;
+  border: none;
+  border-radius: 50%; 
+  padding: 10px; 
+  cursor: pointer;
+}
+
+.preluata {
+  background-color: green; 
+  color: white; 
+  font-weight: bold;
+  cursor: not-allowed; 
+}

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#addUserPage {
+  background-color: #B5C0D0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 900px; /* Ajustat pentru a se potrivi mai bine cu dimensiunea formularului */
+  height: 700px;
+  padding: 40px;
+  background-color: #F0F4F8; /* Culoare mai deschisă pentru contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  gap: 20px; /* Spatiu mai mare între câmpuri pentru claritate */
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="file"] {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px; /* Colțuri mai puțin rotunjite */
+  border: 2px solid #0c0c0c; /* Culoare mai subtilă a bordurii */
+  width: 250px; /* Lățime completă pentru a umple spațiul disponibil */
+}
+
+#AdaugaUser {
+  padding: 15px; /* Dimensiune ajustată pentru a fi mai accesibil */
+  border-radius: 5px; /* Colțuri mai puțin rotunjite */
+  background-color: #4A90E2; /* Culoare uniformă și plăcută */
+  color: white; /* Textul butonului în alb pentru contrast */
+  cursor: pointer;
+  margin-top: 20px; /* Spațiu adăugat deasupra butonului */
+  width: 200px; /* Lățime specifică pentru buton */
+  height: auto; /* Înălțimea se ajustează automat */
+  align-self: center; /* Centrează butonul în formular */
+}
+
+#addUserPage form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333; /* Culoare mai închisă pentru titlu */
+}
+
+.input-group {
+  display: flex;
+  align-items: center; /* Acest lucru ar trebui să alinieze vertical elementele copil */
+  gap: 10px; /* Ajustează acest spațiu după necesități */
+}
+
+/* Stilizează selectul în general */
+.input-group .pagina-addUser-select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #CCCCCC; /* Culoare de bordură subtilă */
+  background-color: white; /* Fundal alb pentru a se potrivi cu celelalte câmpuri de input */
+  cursor: pointer; /* Schimbă cursorul pentru a indica faptul că acesta este un element interactiv */
+  width: 200px; /* Asigură-te că padding-ul nu adaugă la lățimea totală, cauzând overflow */
+}
+
+/* Stilizează săgeata dropdown-ului */
+.input-group pagina-addUser-select {
+  appearance: none; /* Elimină stilul nativ al săgeții dropdown */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+}
+
+/* Stilizează opțiunile din dropdown */
+.input-group option {
+  padding: 10px; /* Adaugă padding pentru a face fiecare opțiune mai accesibilă */
+  background-color: white; /* Asigură-te că fundalul este alb */
+}
+
+/* Adaugă un hover efect pentru când mouse-ul este deasupra selectului */
+.input-group select:hover {
+  border-color: #4A90E2; /* Schimbă culoarea bordurii la hover pentru un feedback vizual */
+}
+.pagina-addUser-select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #CCCCCC; /* O culoare de bordură specifică */
+  background-color: white;
+  cursor: pointer;
+  width: 200px; /* Pentru a preveni overflow-ul */
+  appearance: none; /* Pentru a elimina aspectul nativ */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" fill="%23000"><path d="M2048 0H0L1024 1024 2048 0zm0 2048L1024 1024 0 2048h2048z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+.pagina-addUser-select option {
+  background-color: #fff; /* Fundal pentru opțiuni */
+  color: #333; /* Culoare text */
+}
+

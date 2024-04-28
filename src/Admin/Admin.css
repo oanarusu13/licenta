@@ -1,0 +1,251 @@
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+}
+
+.admin-body {
+  display: flex;
+  flex-grow: 1;
+}
+.sidebar {
+  display: flex; 
+  flex-direction: column;
+  min-width: 100px;
+  background-color: #596FB7;
+  color: #ffffff;
+  font-weight: bold
+}
+
+.app-name {
+  font-size: 20px; 
+  margin-bottom: 20px; 
+  text-align: center; 
+}
+
+.sidebar-btn {
+  padding: 10px;
+  color: white;
+  background-color: #8576FF; 
+  border: none;
+  width: 80px;
+  height: 80px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+/* Stiluri comune pentru toate butoanele din sidebar */
+.sidebar-item {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+  color: black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold
+
+}
+
+.sidebar-item:hover {
+  background-color: #957DAD; /* Schimbați culoarea de fundal la hover pentru a oferi feedback vizual */
+}
+
+
+.sidebar-btn:hover, .sidebar-item:hover {
+  background-color: #8576FF; /* Schimbați culoarea la hover */
+}
+
+
+.active-icon {
+  margin-right: 5px; 
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto; 
+  font-weight: bold; 
+
+}
+.app-name {
+  font-size: 24px; 
+  font-weight: bold; 
+  color: #ffffff; 
+  margin-bottom: 30px; 
+  text-align: center; 
+  padding: 10px 0; 
+  background-color: incolor; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  
+}
+.content h1 {
+  color: #333;
+  margin-bottom: 20px; 
+  text-align: center;
+  font-weight: bold; 
+
+}
+.admin-body, .content {
+  width: 100%;  /* Asigurați-vă că ocupă 100% din lățimea disponibilă */
+  height: 100%; /* Asigurați-vă că ocupă 100% din înălțimea disponibilă */
+  max-width: none; /* Eliminați orice restricție de max-width */
+  padding: 0;
+  margin: 0;
+  flex: 1;  /* Permite extinderea */
+}
+
+.dashboard-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  padding-top: 100px;
+  margin-bottom: 50px; 
+  justify-content: space-around;
+}
+
+.statistic-card {
+  width: 30%; 
+
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.MuiPagination-ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.MuiPaginationItem-root {
+  margin: 0 4px;
+  border-radius: 4px;
+}
+
+.Mui-selected {
+  background-color: #333 !important;
+  color: rgb(49, 24, 39) !important;
+}
+
+.MuiPaginationItem-page:hover {
+  background-color: #fcfcfc;
+  color: white;
+}
+
+.MuiPaginationItem-ellipsis {
+  color: #f2f2f2;
+  ;
+}
+
+
+.sidebar-item-container {
+  position: relative;
+  width: 100%; /* sau specifică o lățime */
+  
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0; /* Aliniază meniul în partea dreaptă */
+  z-index: 1000; /* Asigură-te că meniul este peste celelalte elemente */
+  top: 0; /* Aliniază meniul în partea de sus a butonului */
+  left: 100%; /* Deplasează meniul spre dreapta butonului */
+  min-width: 150px; /* Ajustează în funcție de conținut */
+}
+
+
+.admin-dropdown-button {
+  background-color:#B3A398; /* Culoare de fundal pentru butoane */
+  color: white; /* Culoarea textului */
+  padding: 10px 15px; /* Padding pentru butoane */
+  border: none; /* Elimină bordura */
+  cursor: pointer; /* Cursorul pointer indică faptul că butonul este clicabil */
+  width: 100%; /* Face ca butonul să ocupe întreaga lățime a meniului drop-down */
+  text-align: left; /* Aliniază textul la stânga */
+  border-bottom: 1px solid incolor ; /* Adaugă o linie subțire între butoane pentru separare */
+}
+
+.admin-dropdown-button:last-child {
+  border-bottom:#B3A398; /* Elimină bordura de la ultimul buton pentru a evita linia dublă la baza meniului */
+}
+
+.admin-dropdown-button .fa-icon {
+  margin-right: 5px; /* Adaugă un spațiu între icoană și text */
+}
+.admin-dropdown-button {
+  width: 150px; /* Setează lățimea butonului */
+  height: 40px; /* Setează înălțimea butonului */
+}
+.admin-dropdown-button:hover {
+  background-color: #B4B4B8; /* Înlocuiți #coloareaDorita cu codul hexazecimal al culorii dorite */
+}
+.gestionare-operatori {
+  max-width: 90%; /* Ajustează lățimea maximă după preferințe */
+  margin: 20px auto; /* Centrarea pe orizontală și adăugarea unui spațiu sus și jos */
+  background-color: #f5f5f5; /* Culoarea de fundal a containerului */
+  padding: 20px; /* Spațiu în jurul conținutului */
+  border-radius: 8px; /* Colțuri rotunjite */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+}
+
+.gestionare-operatori h3 {
+  margin-bottom: 20px; /* Spațiu sub titlu */
+  text-align: center; /* Centrarea titlului */
+  color: #333; /* Culoarea textului */
+}
+
+.gestionare-operatori input[type="text"] {
+  width: 30%; /* Reduceți lățimea de la 100% la 80% sau orice altă valoare dorită */
+  padding: 8px; /* Reduceți padding-ul pentru a face bara mai îngustă */
+  font-size: 14px; /* Opțional, ajustați mărimea fontului pentru a se potrivi cu noua dimensiune a barei de căutare */
+  margin-bottom: 20px; /* Ajustați dacă este necesar, în funcție de spațiul dorit între bara de căutare și elementele următoare */
+  border: 1px solid #ccc; /* Ajustați dacă este necesar */
+  border-radius: 4px; /* Mențineți colțurile rotunjite */
+}
+
+.gestionare-operatori table {
+  width: 100%; /* Lățimea completă a containerului */
+  border-collapse: collapse; /* Elimină spațiul între celule */
+  background-color: #fff; /* Culoarea de fundal pentru tabel */
+}
+
+.gestionare-operatori th, .gestionare-operatori td {
+  text-align: left; /* Alinierea textului */
+  padding: 12px; /* Spațiu în interiorul celulelor */
+  border-bottom: 1px solid #ddd; /* Linie subtilă între rânduri */
+}
+
+.gestionare-operatori th {
+  background-color: #8576FF; /* Culoarea de fundal pentru antet */
+  color: white; /* Culoarea textului pentru antet */
+}
+
+.gestionare-operatori tr:hover {
+  background-color: #f2f2f2; /* Schimbă culoarea de fundal la hover */
+}
+
+/* Stiluri pentru componenta de paginare */
+.Stack {
+  margin-top: 20px; /* Spațiu deasupra paginării */
+  justify-content: center; /* Centrarea paginării */
+}
+
+.MuiPaginationItem-root {
+  border-radius: 4px; /* Colțuri rotunjite pentru butoanele de paginare */
+}
+
+.map-container {
+  width: 100%;
+  height: 100vh; /* Ocupă întreaga înălțime a viewport-ului */
+}

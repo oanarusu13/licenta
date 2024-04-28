@@ -1,0 +1,55 @@
+.homepage-dashboard {
+  padding: 20px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.homepage-dashboard h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.homepage-dashboard .alerts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.homepage-dashboard .alerts-table th,
+.homepage-dashboard .alerts-table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.homepage-dashboard .alerts-table th {
+  background-color: #1C1678;
+  color: white;
+}
+
+.homepage-dashboard .alerts-table img {
+  width: 100px; 
+  height: auto;
+  border-radius: 4px;
+}
+
+.homepage-dashboard .alerts-table td {
+  vertical-align: top; 
+}
+
+.homepage-dashboard .alerts-table button {
+  padding: 5px 10px;
+  background-color: #211e21;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-height: 20px;
+  max-width: 70px;
+}
+
+.homepage-dashboard .alerts-table button:hover {
+  background-color: #c6ced6;
+}

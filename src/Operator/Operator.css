@@ -1,0 +1,21 @@
+.operator-dashboard {
+  padding: 20px;
+}
+
+.alert-details {
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.alert-details h2 {
+  margin-bottom: 10px;
+}
+
+.alert-details img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
